@@ -17,7 +17,7 @@ class Rectangle{
     static int i=1;
 	static void speak(){
 	double w,h,X,Y;   
-	    Scanner scanner =new Scanner(System.in);
+	    Scanner scanner =new Scanner(System.in);//有燈泡提示 但不影響結果
 		System.out.println("Please enter rectangle"+i+"'s width : ");
 		w=scanner.nextInt();
 		System.out.println("Please enter rectangle"+i+"'s height : ");
