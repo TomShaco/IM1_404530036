@@ -1,10 +1,12 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 public class RectangleTester
 {
 	public static void main(String[ ] args){
 		try{
-		R.show();
+		Rectangle.speak();
+		Rectangle.speak();
 		}
 		catch( InputMismatchException ex){
 			System.out.println("Please enter with number");
@@ -12,10 +14,10 @@ public class RectangleTester
 		}
 	}
 class Rectangle{
-	Scanner scanner =new Scanner(System.in);
-	double w,h,X,Y;
-        int i=1;
-	void speak(){
+    static int i=1;
+	static void speak(){
+	double w,h,X,Y;   
+	    Scanner scanner =new Scanner(System.in);
 		System.out.println("Please enter rectangle"+i+"'s width : ");
 		w=scanner.nextInt();
 		System.out.println("Please enter rectangle"+i+"'s height : ");
@@ -28,12 +30,5 @@ class Rectangle{
 		System.out.println("Rectangle"+i+"'s area is "+w*h);
 		System.out.println("Rectangle"+i+"'s perimeter is "+(w+h)*2);
 		i++;
-	}
-}
-class R{
-	public static void show(){
-		Rectangle R = new Rectangle();
-		R.speak();
-		R.speak();
 	}
 }
