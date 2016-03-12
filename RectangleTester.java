@@ -26,7 +26,7 @@ class Rectangle{
 		X=scanner.nextInt();
 		System.out.println("Please enter rectangle"+i+"'s Y-axis : ");
 		Y=scanner.nextInt();
-		System.out.println("Rectangle"+i+"(width = "+w+"  height = "+h+"  X-axis = "+X+"  Y-axis = "+Y);
+		System.out.println("Rectangle"+i+"(width = "+w+"  height = "+h+"  X-axis = "+X+"  Y-axis = "+Y+")");
 		System.out.println("Rectangle"+i+"'s area is "+w*h);
 		System.out.println("Rectangle"+i+"'s perimeter is "+(w+h)*2);
 		i++;
