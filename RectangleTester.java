@@ -2,36 +2,64 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class Rectangle {
-	// height, width, x, y?
-	// 建構子
-	// method?
-	// overridding public String toString(){}
+
+	double W, H, X, Y;
+
+	Rectangle() {
+		this(0, 0, 0, 0);
+	}
+
+	Rectangle(double w, double h, double x, double y) {
+		H = h;
+		W = w;
+		X = x;
+		Y = y;
+	}
+
+	public double getHeight() {
+		return H;
+	}
+
+	public double getWidth() {
+		return W;
+	}
+
+	public double getXaxis() {
+		return X;
+	}
+
+	public double getYaxis() {
+		return Y;
+	}
+
+	public String toString() {
+
+		return "java.Rectangle = " + "[ weight = " + W + " , Height = " + H + " , X-axis = " + X + " , Y-axis = " + Y
+				+ " ]";
+	}
 
 }
 
 public class RectangleTester {
 	public static void main(String[] args) {
 		try {
-			// build object
-			double w, h, X, Y;
+			double w, h, x, y;
 			Scanner scanner = new Scanner(System.in);
-			for (int i = 0; i < 2; i++) {
+			for (int i = 1; i < 3; i++) {
 
 				System.out.println("Please enter rectangle" + i + "'s width : ");
 				w = scanner.nextInt();
 				System.out.println("Please enter rectangle" + i + "'s height : ");
 				h = scanner.nextInt();
 				System.out.println("Please enter rectangle" + i + "'s X-axis : ");
-				X = scanner.nextInt();
+				x = scanner.nextInt();
 				System.out.println("Please enter rectangle" + i + "'s Y-axis : ");
-				Y = scanner.nextInt();
+				y = scanner.nextInt();
 
-				Rectangle r1 = new Rectangle(w, h, X, Y);
-				System.out.println(r1);
-				
-				//function call
-				System.out.println("Area=");
-				System.out.println("Perimeter=");
+				Rectangle r = new Rectangle(w, h, x, y);
+				System.out.println(r);
+				System.out.println("Area = " + r.getHeight() * r.getWidth());
+				System.out.println("Perimeter = " + (r.getHeight() + r.getWidth()) * 2);
 			}
 
 		} catch (InputMismatchException ex) {
