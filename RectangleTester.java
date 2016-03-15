@@ -1,3 +1,11 @@
+/*
+ * [A]100
+ * [TA's advise]
+ * 1.能找到InputMismatchException也證明自己有上網查找資料的能力, 很好!
+ * 2.寫程式的時候謹慎, 也要想著用簡單的方法去解決複雜的事情.
+ * 3.基本上沒什麼太大問題, 如果有興趣的話可以研究看看修飾字的差異(public, protected, private), 會讓你的程式accessiblity更好.
+ * */
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
